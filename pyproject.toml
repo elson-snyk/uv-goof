@@ -1,0 +1,16 @@
+[project]
+name = "albatross"
+version = "0.1.0"
+dependencies = [
+  # Any version in this range
+  "tqdm >=4.66.2,<5",
+  # Exactly this version of torch
+  "torch ==2.2.2",
+  # Install transformers with the torch extra
+  "transformers[torch] >=4.39.3,<5",
+  # Only install this package on older python versions
+  # See "Environment Markers" for more information
+  "importlib_metadata >=7.1.0,<8; python_version < '3.10'",
+  #"mollymawk ==0.1.0"
+]
+
